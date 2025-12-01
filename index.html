@@ -13,6 +13,7 @@
             line-height: 1.6;
         }
 
+        /* HEADER STYLING */
         header {
             background: #001f3f;
             color: white;
@@ -22,19 +23,29 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* NAME ANIMATION */
+        @keyframes slideFade {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         header h1 {
             font-size: 32px;
             margin: 0;
+            animation: slideFade 1.4s ease-out;
         }
 
         header h3 {
             font-size: 17px;
             margin: 6px 0 0 0;
             font-weight: normal;
+            animation: slideFade 2.2s ease-out;
         }
 
+        /* NAV MENU */
         nav {
             background: #87cefa;
             padding: 12px;
@@ -53,6 +64,7 @@
             color: white;
         }
 
+        /* MAIN LAYOUT */
         .content {
             padding: 40px;
             max-width: 1100px;
@@ -72,23 +84,23 @@
             font-size: 18px;
         }
 
-        /* VERY LIGHT GREY background */
+        /* LIGHT GREY BOX */
         .description-box {
             background: #f7f7f7;
             padding: 20px;
             border-radius: 10px;
-            margin-bottom: 35px;
+            margin-bottom: 45px;
         }
 
-        /* JUSTIFY the text */
         .description-box p {
             text-align: justify;
         }
 
+        /* PHOTO */
         .photo-block {
             width: 280px;
             text-align: center;
-            margin-top: 120px; /* Move photo DOWN */
+            margin-top: 120px;
         }
 
         .photo-block img {
@@ -97,9 +109,15 @@
             margin-bottom: 15px;
         }
 
+        /* SOCIAL ICONS */
         .icons img {
             width: 32px;
             margin: 6px;
+        }
+
+        /* MOVE RESEARCH INTERESTS DOWN */
+        .research-section {
+            margin-top: 60px;
         }
 
         ul {
@@ -129,7 +147,7 @@
 
     <div class="profile-section">
 
-        <!-- LEFT SIDE — TEXT -->
+        <!-- LEFT SIDE TEXT -->
         <div class="text-block">
 
             <h2>Welcome</h2>
@@ -141,8 +159,9 @@
                     the Innovative Structural Engineering and Mechanics Group, where he focuses on 
                     advanced materials, structural performance, and computational analysis. 
                     Dr. Karimi Pour spent four years as a Research and Teaching Assistant in the 
-                    Department of Civil Engineering at UTEP, contributing to major research projects. He has been affiliated 
-                    with UTEP since 2019 and was a member of the Center for Transportation Infrastructure Systems (CTIS) from 
+                    Department of Civil Engineering at UTEP, contributing to major research projects. He has been 
+                    affiliated with UTEP since 2019 and was a 
+                    standing member of the Center for Transportation Infrastructure Systems (CTIS) from 
                     2019 to 2020.
                 </p>
 
@@ -160,24 +179,27 @@
                 </p>
             </div>
 
-            <h2>Research Interests</h2>
-            <ul>
-                <li>Computational Mechanics and Constitutive Modeling of Civil Engineering Materials</li>
-                <li>Green and Eco-friendly Concrete</li>
-                <li>Sustainable Construction Materials</li>
-                <li>Finite Element Methods</li>
-                <li>Non-Linear Dynamic Analysis</li>
-                <li>Artificial Neural Networks</li>
-                <li>Fiber-Reinforced & Composite Materials</li>
-                <li>Advanced Materials and Devices</li>
-                <li>Materials Under Extreme Environments</li>
-                <li>Fracture Mechanics</li>
-                <li>Materials Science</li>
-            </ul>
+            <!-- RESEARCH INTERESTS MOVED LOWER -->
+            <div class="research-section">
+                <h2>Research Interests</h2>
+                <ul>
+                    <li>Computational Mechanics and Constitutive Modeling of Civil Engineering Materials</li>
+                    <li>Green and Eco-friendly Concrete</li>
+                    <li>Sustainable Construction Materials</li>
+                    <li>Finite Element Methods</li>
+                    <li>Non-Linear Dynamic Analysis</li>
+                    <li>Artificial Neural Networks</li>
+                    <li>Fiber-Reinforced & Composite Materials</li>
+                    <li>Advanced Materials and Devices</li>
+                    <li>Materials Under Extreme Environments</li>
+                    <li>Fracture Mechanics</li>
+                    <li>Materials Science</li>
+                </ul>
+            </div>
 
         </div>
 
-        <!-- RIGHT SIDE — PHOTO + ICONS -->
+        <!-- PHOTO + ICONS -->
         <div class="photo-block">
             <img src="IMG_5703.jpeg" alt="Arash Karimi Pour">
 
@@ -192,6 +214,11 @@
 
                 <a href="https://www.researchgate.net/profile/Arash-Karimi-Pour?ev=hdr_xprf" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg">
+                </a>
+
+                <!-- SPRINGER NATURE ICON + LINK -->
+                <a href="https://link.springer.com/collections/ibhbfhjaij" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Springer_Nature_logo.png">
                 </a>
             </div>
         </div>
