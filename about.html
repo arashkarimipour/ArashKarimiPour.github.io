@@ -10,6 +10,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
+            background: #f4f8fc;
         }
 
         header {
@@ -42,9 +44,58 @@
         }
 
         .content {
-            padding: 40px;
-            max-width: 900px;
+            padding: 30px;
+            max-width: 1100px;
             margin: auto;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* PHOTO LEFT SIDE */
+        .photo-block {
+            width: 300px;
+            text-align: center;
+        }
+
+        .photo-block img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        /* DESCRIPTION BOX */
+        .description-box {
+            flex: 1;
+            background: #f7f7f7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .description-box p {
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        h2 {
+            margin-top: 45px;
+            color: #001f3f;
+            font-size: 26px;
+        }
+
+        ul {
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .section-block {
+            background: #ffffffcc;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 25px;
         }
     </style>
 </head>
@@ -53,6 +104,7 @@
 
 <header>
     <h1>About Me</h1>
+    <h3>(Professional Background & Qualifications)</h3>
 </header>
 
 <nav>
@@ -65,8 +117,97 @@
 </nav>
 
 <div class="content">
-    <h2>About Me</h2>
-    <p>Write your biography here.</p>
+
+    <div class="about-section">
+
+        <!-- PHOTO LEFT -->
+        <div class="photo-block">
+            <img src="IMG_5703.jpeg" alt="Arash Karimi Pour">
+        </div>
+
+        <!-- DESCRIPTION RIGHT -->
+        <div class="description-box">
+            <p>
+                Dr. Arash Karimi Pour earned a Doctoral degree in Civil Engineering from the University 
+                of Texas at El Paso (UTEP) in 2023. He serves as a senior researcher with the Innovative 
+                Structural Engineering and Mechanics Group, where he focuses on advanced materials, 
+                structural performance, and computational analysis. Dr. Karimi Pour spent four years as a 
+                Research and Teaching Assistant in the Department of Civil Engineering at UTEP, collaborating 
+                on major research projects. He has been affiliated with UTEP since 2019 and was a standing 
+                member of the Center for Transportation Infrastructure Systems (CTIS) from 2019 to 2020.
+            </p>
+
+            <p>
+                Dr. Karimi Pour completed his graduate studies in Structural Engineering at Ferdowsi 
+                University of Mashhad (FUM) and brings more than a decade of professional experience as a 
+                senior civil engineer and researcher. His work spans finite element methods, retrofitting 
+                of concrete members, sustainable construction materials, and advanced computational modeling. 
+                His current research focuses on improving the structural performance of sustainable materials, 
+                computational mechanics, constitutive modeling of civil engineering materials—including soils, 
+                concrete, and asphalt—advanced materials and devices, and the behavior of materials under 
+                extreme environments. He also serves as an editor for multiple scientific journals and is an 
+                active reviewer for leading publishing organizations including Elsevier, Wiley, ASCE, and Springer.
+            </p>
+        </div>
+    </div>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <h2>Professional Experience</h2>
+    <div class="section-block">
+        <ul>
+            <li>Researcher, Innovative Structural Engineering and Mechanics Group (2022–Current)</li>
+            <li>Guest Editor, Discover Sustainability, Springer (2023–Current)</li>
+            <li>Young Editorial Board Member, Low-Carbon Materials and Green Construction, Springer (2023–2024)</li>
+            <li>Structural Engineer Consultant, Building Enclosure Science (BES), Boston, USA (2024–2025)</li>
+            <li>Senior Structural Engineer, Thornton Tomasetti Inc. (2023–2024)</li>
+            <li>Research Assistant, Department of Civil Engineering, UTEP (2020–2023)</li>
+            <li>Research Associate, Center for Transportation Infrastructure Systems (CTIS) (2019–2020)</li>
+            <li>Research Assistant, Ferdowsi University of Mashhad (2017–2022)</li>
+            <li>Project Manager, Borjsazan Gostar Shargh Iran Company (2017–2019)</li>
+            <li>Structural Engineer, Borjsazan Gostar Shargh Iran Company (2015–2017)</li>
+        </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <h2>Education</h2>
+    <div class="section-block">
+        <ul>
+            <li><strong>University of Texas at El Paso (2019–2023)</strong><br>
+                Ph.D. in Civil Engineering<br>
+                Dissertation: <em>Thermal Behavior of Plain and Fiber-Reinforced Rigid Concrete Airfield Runways</em>
+            </li>
+
+            <li><strong>Ferdowsi University of Mashhad (2015–2017)</strong><br>
+                M.Sc. in Civil Engineering – Structural Engineering<br>
+                Dissertation: <em>Investigation of Lap-Spliced Reinforcing Bars in Steel Fibres-Reinforced Concrete (SFC) Under Static and Cyclic Loading</em>
+            </li>
+
+            <li><strong>Ilam University (2011–2015)</strong><br>
+                B.Sc. in Civil Engineering – Construction Engineering
+            </li>
+        </ul>
+    </div>
+
+    <!-- LICENSES -->
+    <h2>Licenses & Verifications</h2>
+    <div class="section-block">
+        <ul>
+            <li>LEED Green Associate – GBCI</li>
+            <li>Roof-Specific Rope Access Level I — Reality Rope Access LLC</li>
+            <li>Certified Sustainable Development Professional (CSDP) — IBMI</li>
+            <li>Project Management — IBMI</li>
+            <li>Risk Management — IBMI</li>
+
+            <li>Professional Engineer (PE) — Texas Board of Professional Engineers</li>
+            <li>Professional Engineer (PE) — New Mexico Board of Licensure</li>
+            <li>Professional Engineer (PE) — Oklahoma State Board of Licensure</li>
+            <li>Professional Engineer (PE) — Maine Board of Licensure</li>
+
+            <li>Right of Way (ROW) Addendum — MBTA, Boston MA</li>
+            <li>Responsible Conduct of Research, Engineering & Computer Science — CITI Program</li>
+        </ul>
+    </div>
+
 </div>
 
 </body>
